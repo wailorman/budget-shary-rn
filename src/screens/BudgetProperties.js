@@ -7,6 +7,7 @@ import BudgetName from '../components/BudgetProperties/BudgetName'
 import Heading from '../components/Heading'
 import BudgetParticipant from '../components/BudgetProperties/BudgetParticipant'
 import Hint from '../components/Hint'
+import { BudgetNavigationButtons } from '../components/Button'
 
 class BudgetPropertiesScreen extends React.Component {
   static navigationOptions = {
@@ -26,6 +27,7 @@ class BudgetPropertiesScreen extends React.Component {
         <Hint>
           Между кем нужно рассчитать затраты?
         </Hint>
+        <BudgetNavigationButtons />
       </View>
     )
   }

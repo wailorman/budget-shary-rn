@@ -1,7 +1,7 @@
-import { StyleSheet, Platform } from 'react-native'
+import { Platform } from 'react-native'
 import colors from './colors'
 
-export default StyleSheet.create({
+export default {
   screen: {
     backgroundColor: colors.background,
     flex: 1,
@@ -18,6 +18,19 @@ export default StyleSheet.create({
       shadowOpacity: 0.25,
     }
     : {
-      elevation: 1,
+      elevation: 2,
     },
-})
+  noShadow: Platform.OS === 'ios'
+    ? {
+      shadowColor: '#000000',
+      shadowOffset: {
+        width: 0,
+        height: 0,
+      },
+      shadowRadius: 0,
+      shadowOpacity: 0,
+    }
+    : {
+      elevation: 0,
+    },
+}

@@ -1,23 +1,22 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import {} from 'react-native';
+import { createDrawerNavigator, createStackNavigator } from 'react-navigation';
+import 'expo';
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
-      </View>
-    );
-  }
-}
+import routesConfig from './src/config/routes';
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+const StackNavigator = createStackNavigator(routesConfig);
+
+const drawerRoutes = Object.keys(routesConfig).reduce((prev, curRouteName) => ({
+  ...prev,
+  [curRouteName]: StackNavigator,
+}), {});
+
+
+const DrawerNavigator = createDrawerNavigator(
+  drawerRoutes,
+  {
+    // initialRouteName: 'Home',
   },
-});
+);
+
+export default DrawerNavigator;

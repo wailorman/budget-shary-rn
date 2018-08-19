@@ -8,6 +8,7 @@ import {
 import _ from 'lodash'
 
 import colors from '../../config/colors'
+import commonStyles from '../../config/common-styles'
 import Hint from '../Hint'
 
 const styles = StyleSheet.create({
@@ -81,6 +82,7 @@ class Input extends React.Component {
           style={[
             styles.wrapper,
             wrapperStyle,
+            commonStyles.shadow,
           ]}
         >
 

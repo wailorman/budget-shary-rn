@@ -1,0 +1,12 @@
+parser: babel-eslint
+extends: airbnb
+env:
+  commonjs: true
+  es6: true
+rules:
+  semi:
+    - warn
+    - never
+
+  react/prefer-stateless-function: off
+  react/jsx-filename-extension: off

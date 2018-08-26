@@ -1,5 +1,4 @@
 import React from 'react'
-import { View } from 'react-native'
 
 import commonStyles from '../config/common-styles'
 
@@ -7,6 +6,8 @@ import BudgetName from '../components/BudgetProperties/BudgetName'
 import Heading from '../components/Heading'
 import BudgetParticipant from '../components/BudgetProperties/BudgetParticipant'
 import Hint from '../components/Hint'
+import Screen from '../components/Screen'
+
 import { BudgetNavigationButtons } from '../components/Button'
 
 class BudgetPropertiesScreen extends React.Component {
@@ -16,7 +17,7 @@ class BudgetPropertiesScreen extends React.Component {
 
   render() {
     return (
-      <View style={[commonStyles.screen]}>
+      <Screen style={[commonStyles.screen]}>
         <BudgetName />
         <Heading>
           Участники
@@ -28,7 +29,7 @@ class BudgetPropertiesScreen extends React.Component {
           Между кем нужно рассчитать затраты?
         </Hint>
         <BudgetNavigationButtons />
-      </View>
+      </Screen>
     )
   }
 }

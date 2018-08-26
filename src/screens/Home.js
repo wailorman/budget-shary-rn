@@ -1,11 +1,11 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
 import {
   View,
   Button,
   StyleSheet,
-} from 'react-native';
-import { DrawerActions } from 'react-navigation';
+} from 'react-native'
+import { DrawerActions } from 'react-navigation'
 
 const styles = StyleSheet.create({
   container: {
@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     justifyContent: 'center',
   },
-});
+})
 
 class HomeScreen extends React.Component {
   static navigationOptions = {
@@ -28,7 +28,7 @@ class HomeScreen extends React.Component {
   }
 
   render() {
-    const { navigation: { dispatch, navigate } } = this.props;
+    const { navigation: { dispatch, navigate } } = this.props
     return (
       <View style={styles.container}>
         <Button
@@ -39,9 +39,13 @@ class HomeScreen extends React.Component {
           title="Budget Properties"
           onPress={() => navigate('BudgetProperties')}
         />
+        <Button
+          title="Budget Expenses"
+          onPress={() => navigate('BudgetExpenses')}
+        />
       </View>
-    );
+    )
   }
 }
 
-export default HomeScreen;
+export default HomeScreen

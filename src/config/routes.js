@@ -2,6 +2,7 @@ import HomeScreen from '../screens/Home'
 import BudgetsScreen from '../screens/Budgets'
 import BudgetPropertiesScreen from '../screens/BudgetProperties'
 import BudgetExpensesScreen from '../screens/BudgetExpenses'
+import BudgetSharesScreen from '../screens/BudgetShares'
 
 export default {
   Home: {
@@ -15,5 +16,8 @@ export default {
   },
   BudgetExpenses: {
     screen: BudgetExpensesScreen,
+  },
+  BudgetShares: {
+    screen: BudgetSharesScreen,
   },
 }

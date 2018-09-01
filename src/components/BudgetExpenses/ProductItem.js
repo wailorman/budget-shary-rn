@@ -1,11 +1,15 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { View, StyleSheet, TouchableHighlight } from 'react-native'
+import {
+  View, StyleSheet, TouchableHighlight, Dimensions,
+} from 'react-native'
 import { Ionicons } from '@expo/vector-icons'
 
 import colors from '../../config/colors'
 
 import Input from '../Input'
+
+const { width } = Dimensions.get('window')
 
 const styles = StyleSheet.create({
   wrapper: {
@@ -16,7 +20,7 @@ const styles = StyleSheet.create({
     marginRight: 6,
   },
   priceInputContainer: {
-    flexGrow: 1,
+    width: width / 2.5,
   },
   nameInput: {
     flexGrow: 2,

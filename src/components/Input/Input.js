@@ -75,6 +75,8 @@ class Input extends React.Component {
       'right',
       'left',
       'hint',
+      'wrapperStyle',
+      'inputStyle',
     ])
 
     return (

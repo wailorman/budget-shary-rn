@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
   hint: {
     color: colors.hintText,
     fontSize: 12,
-    marginTop: 6,
+    marginBottom: 6,
   },
 })
 

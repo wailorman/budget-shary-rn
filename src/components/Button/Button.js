@@ -13,6 +13,7 @@ import commonStyles from '../../config/common-styles'
 const styles = StyleSheet.create({
   touchable: {
     marginTop: 8,
+    borderRadius: 2,
   },
   wrapper: {
     padding: 10,
@@ -36,6 +37,12 @@ const wrapperStyles = StyleSheet.create({
   normal: {
     backgroundColor: colors.normal,
   },
+  info: {
+    backgroundColor: colors.info,
+  },
+  light: {
+    backgroundColor: colors.light,
+  },
 })
 
 const textStyles = StyleSheet.create({
@@ -46,6 +53,12 @@ const textStyles = StyleSheet.create({
     color: colors.invertedText,
   },
   normal: {
+    color: colors.text,
+  },
+  info: {
+    color: colors.invertedText,
+  },
+  light: {
     color: colors.text,
   },
 })
@@ -63,7 +76,10 @@ class Button extends React.Component {
       'primary',
       'danger',
       'normal',
+      'info',
+      'light',
     ]),
+    noShadow: PropTypes.bool,
   }
 
   static defaultProps = {
@@ -72,6 +88,7 @@ class Button extends React.Component {
     touchableStyle: {},
     viewStyle: {},
     textStyle: {},
+    noShadow: false,
   }
 
   render() {
@@ -81,12 +98,15 @@ class Button extends React.Component {
       touchableStyle,
       viewStyle,
       textStyle,
+      noShadow,
     } = this.props
 
     const underlayColorMap = {
       normal: 'rgba(0, 0, 0, 0.8)',
       primary: 'rgba(255, 255, 255, 0.9)',
       danger: 'rgba(255, 255, 255, 0.9)',
+      info: 'rgba(0, 0, 0, 1)',
+      light: 'rgba(0, 0, 0, 0.8)',
     }
 
     return (
@@ -104,6 +124,7 @@ class Button extends React.Component {
             wrapperStyles[type],
             commonStyles.shadow,
             viewStyle,
+            noShadow && commonStyles.noShadow,
           ]}
         >
           <Text

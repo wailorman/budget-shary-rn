@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { View } from 'react-native'
+import { ScrollView } from 'react-native'
 
 import commonStyles from '../config/common-styles'
 
@@ -20,14 +20,14 @@ export default class Screen extends Component {
   render() {
     const { children, style } = this.props
     return (
-      <View
+      <ScrollView
         style={[
           commonStyles.screen,
           style,
         ]}
       >
         {children}
-      </View>
+      </ScrollView>
     )
   }
 }

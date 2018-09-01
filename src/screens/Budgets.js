@@ -1,19 +1,19 @@
-import React from 'react';
+import React from 'react'
 import {
   ScrollView,
   StyleSheet,
   Dimensions,
-} from 'react-native';
+} from 'react-native'
 import {
   // createStackNavigator,
   // withNavigation,
   SafeAreaView,
   // Header,
-} from 'react-navigation';
+} from 'react-navigation'
 
-import BudgetListItem from '../components/BudgetList/BudgetListItem';
+import BudgetListItem from '../components/BudgetList/BudgetListItem'
 
-const { width } = Dimensions.get('window');
+const { width } = Dimensions.get('window')
 
 const styles = StyleSheet.create({
   container: {
@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
     // flexDirection: 'row',
     width,
   },
-});
+})
 
 class BudgetsScreen extends React.Component {
   static navigationOptions = {
@@ -43,8 +43,8 @@ class BudgetsScreen extends React.Component {
           <BudgetListItem title="ТКХ" subTitle="20000 ₽" />
         </ScrollView>
       </SafeAreaView>
-    );
+    )
   }
 }
 
-export default BudgetsScreen;
+export default BudgetsScreen

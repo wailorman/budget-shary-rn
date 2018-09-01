@@ -6,8 +6,12 @@ export default {
   headingText: '#4e4b4b',
   placeholderText: '#bcbcbc',
   inputBackground: '#FFFFFF',
+  blockBackground: '#FFFFFF',
   iconColor: '#bdbdbd',
   primary: '#007aff',
   danger: '#ff6f59',
   normal: '#ffffff',
+  info: '#9cc0ff',
+  light: '#efefef',
+  blockTitle: '#d8d8d8',
 }

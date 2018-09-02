@@ -4,6 +4,7 @@ import BudgetPropertiesScreen from '../screens/BudgetProperties'
 import BudgetExpensesScreen from '../screens/BudgetExpenses'
 import BudgetSharesScreen from '../screens/BudgetShares'
 import TransactionsScreen from '../screens/Transactions'
+import CalculatingStubScreen from '../screens/CalculatingStub'
 
 export default {
   Home: {
@@ -23,5 +24,8 @@ export default {
   },
   Transactions: {
     screen: TransactionsScreen,
+  },
+  CalculatingStub: {
+    screen: CalculatingStubScreen,
   },
 }

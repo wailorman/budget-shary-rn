@@ -47,6 +47,10 @@ class HomeScreen extends React.Component {
           title="Budget Shares"
           onPress={() => navigate('BudgetShares')}
         />
+        <Button
+          title="Transactions"
+          onPress={() => navigate('Transactions')}
+        />
       </View>
     )
   }

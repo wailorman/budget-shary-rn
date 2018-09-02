@@ -7,9 +7,9 @@ import {
 } from 'react-native'
 import _ from 'lodash'
 
-import colors from '../../config/colors'
-import commonStyles from '../../config/common-styles'
-import Hint from '../Hint'
+import colors from '../config/colors'
+import commonStyles from '../config/common-styles'
+import Hint from './Hint'
 
 const styles = StyleSheet.create({
   wrapper: {
@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
 
     flexDirection: 'row',
 
-    marginTop: 8,
+    marginBottom: 8,
   },
   input: {
     marginLeft: 15,

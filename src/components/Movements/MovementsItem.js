@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
   },
 })
 
-export default class TransactionsItem extends Component {
+export default class MovementsItem extends Component {
   static propTypes = {
     from: PropTypes.string,
     to: PropTypes.string,

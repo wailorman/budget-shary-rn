@@ -3,7 +3,7 @@ import BudgetsScreen from '../screens/Budgets'
 import BudgetPropertiesScreen from '../screens/BudgetProperties'
 import BudgetExpensesScreen from '../screens/BudgetExpenses'
 import BudgetSharesScreen from '../screens/BudgetShares'
-import TransactionsScreen from '../screens/Transactions'
+import MovementsScreen from '../screens/Movements'
 import CalculatingStubScreen from '../screens/CalculatingStub'
 
 export default {
@@ -22,8 +22,8 @@ export default {
   BudgetShares: {
     screen: BudgetSharesScreen,
   },
-  Transactions: {
-    screen: TransactionsScreen,
+  Movements: {
+    screen: MovementsScreen,
   },
   CalculatingStub: {
     screen: CalculatingStubScreen,

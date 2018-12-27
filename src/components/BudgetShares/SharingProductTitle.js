@@ -16,12 +16,12 @@ const styles = StyleSheet.create({
     marginBottom: 3,
   },
   nameText: {
-    fontSize: 14,
+    fontSize: 16,
     fontWeight: 'bold',
     color: colors.text,
   },
   priceText: {
-    fontSize: 14,
+    fontSize: 16,
     // fontWeight: 'bold',
     color: colors.text,
   },

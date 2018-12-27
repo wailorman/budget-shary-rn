@@ -7,7 +7,7 @@ import colors from '../config/colors'
 const styles = StyleSheet.create({
   hint: {
     color: colors.hintText,
-    fontSize: 12,
+    fontSize: 14,
     marginBottom: 6,
   },
 })

@@ -20,11 +20,12 @@ const styles = StyleSheet.create({
   },
   nameText: {
     flexGrow: 2,
+    fontSize: 17,
     textAlign: 'center',
   },
   shareText: {
     flexGrow: 0,
-    fontSize: 10,
+    fontSize: 12,
     color: colors.hintText,
   },
 })

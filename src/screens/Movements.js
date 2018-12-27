@@ -2,18 +2,18 @@ import React, { Component } from 'react'
 
 import Screen from '../components/Screen'
 
-import TransactionItem from '../components/Transactions/TransactionsItem'
+import MovementItem from '../components/Movements/MovementsItem'
 
-export default class Transactions extends Component {
+export default class Movements extends Component {
   render() {
     return (
       <Screen>
-        <TransactionItem
+        <MovementItem
           from="Майк"
           to="Алиса"
           total={532.6}
         />
-        <TransactionItem
+        <MovementItem
           from="Боб"
           to="Кэшбэк"
           total={105.9}

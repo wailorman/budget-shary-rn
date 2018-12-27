@@ -10,6 +10,9 @@ const styles = StyleSheet.create({
     flexGrow: 1,
     margin: 5,
   },
+  text: {
+    fontSize: 15,
+  },
 })
 
 export default class SharingParticipantButton extends Component {
@@ -30,6 +33,9 @@ export default class SharingParticipantButton extends Component {
       <Button
         touchableStyle={[
           styles.buttonTouchable,
+        ]}
+        textStyle={[
+          styles.text,
         ]}
         text={name}
         type={active ? 'info' : 'light'}
